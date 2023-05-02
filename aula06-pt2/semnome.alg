@@ -15,16 +15,19 @@ leia(nome)
 escreval(nome," digite sua altura")
 leia(altura)
 
-escreval("Se você for Homem digite - M")
-escreval("Se você for Mulher digite - F")
+escreval("Se vocÃª for Homem digite - m")
+escreval("Se vocÃª for Mulher digite - f")
 leia(sexo)
 
-se sexo = "M" entao
+escolha sexo caso
+caso "f"
+   peso <- (62.1 * altura â€“ 44.7)
+   escreval(nome," seu peso ideal com a altura de",altura," Ã©",peso,"KG")
+caso "m"
    peso <- (72.7 * altura - 58)
-   escreval(nome," seu peso ideal com a altura de",altura," é",peso,"KG")
-senao
-   peso <- (62.1 * altura – 44.7)
-   escreval(nome," seu peso ideal com a altura de",altura," é",peso,"KG")
-fimse
+   escreval(nome," seu peso ideal com a altura de",altura," Ã©",peso,"KG")
+outrocaso
+   escreval("NÃ£o existe esse sexo")
+fimescolha
 
 fimalgoritmo
