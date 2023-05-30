@@ -1,34 +1,34 @@
 Algoritmo "semnome"
-// Disciplina   : [Linguagem e Lógica de Programação]
+// Disciplina   : [Linguagem e LÃ³gica de ProgramaÃ§Ã£o]
 // Professor   : Antonio Carlos Nicolodi
-// Descrição   : Aqui você descreve o que o programa faz! (função)
+// DescriÃ§Ã£o   : Aqui vocÃª descreve o que o programa faz! (funÃ§Ã£o)
 // Autor(a)    : Nome do(a) aluno(a)
 // Data atual  : 23/05/2023
 Var
 x,r:real
 
 Inicio
-escreval("Digite o preço de compra do produto:")
+escreval("Digite o preÃ§o de compra do produto:")
 leia(x)
 escreval("")
 
 se (x < 10) entao
    r <- x + ((x * 70) / 100)
-   escreval("Você tera um valor de venda de:",r)
+   escreval("VocÃª tera um valor de venda de:",r)
 senao
-     se (x = 10) e (x <=30) entao
+     se (x >= 10) e (x <=30) entao
         r <- x + ((x * 50) / 100)
-        escreval("Você tera um valor de venda de:",r)
+        escreval("VocÃª tera um valor de venda de:",r)
      senao
-          se (x = 30) e (x <=50) entao
+          se (x >= 30) e (x <=50) entao
              r <- x + ((x * 40) / 100)
-             escreval("Você tera um valor de venda de:",r)
+             escreval("VocÃª tera um valor de venda de:",r)
              senao
                   se (x > 50) entao
                      r <- x + ((x * 30) / 100)
-                     escreval("Você tera um valor de venda de:",r)
+                     escreval("VocÃª tera um valor de venda de:",r)
                   senao
-                     escreval("Não entendi")
+                     escreval("NÃ£o entendi")
                   fimse
              fimse
      fimse
